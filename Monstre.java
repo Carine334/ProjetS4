@@ -37,7 +37,13 @@ public class Monstre { //regarde et cherche le pion le plus proche à gauche dro
         }
     }
     
-    public 
+     public  void manger(Monstre m, Pion p){
+        if(p.getX()==x && p.getY()==y){
+            p.setSurPlateau(false);
+        }
+        else
+            p.setSurPlateau(true);
+    }
 }
 //méthode pour afficher sa position
 //méthode déplacement voir dans Pion
