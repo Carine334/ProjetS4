@@ -15,4 +15,16 @@ public class Manche {
     public int getNumManche(){
         return this.numManche;
     }
+        //conditions d'arrêt d'une manche
+    public void arret(Joueur j){
+        if(j.pionRestant()<=1){
+            if(numManche==1){
+            System.out.println("Fin de manche!\n");
+            System.out.println("Manche"+numManche+1);
+        }
+        else
+                System.out.println("Fin de Jeu");
+           
+        }
+    }
 }
