@@ -37,7 +37,25 @@ public class Monstre { //regarde et cherche le pion le plus proche à gauche dro
         }
     }
     
-    public 
+    //les deux méthodes qui suivent peuvent être améliorer
+       public void mangerManche1(Pion p, Joueur j){
+        
+        if(p.getX()==x && p.getY()==y){ 
+            p.setSurPlateau(false);
+        }   
+        int nb=j.pionRestant();
+        nb--;
+    //sera suivi de la méthode remettre en fin de manche
+    } 
+    
+    public void mangerManche2(Pion p, Joueur j){
+        if(p.getX()==x && p.getY()==y){ 
+            p.setSurPlateau(false);
+        }   
+        int nb=j.pionRestant();
+        nb--;
+        //le pion ne sera pas remis
+    }
 }
 //méthode pour afficher sa position
 //méthode déplacement voir dans Pion
