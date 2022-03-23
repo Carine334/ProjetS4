@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Joueur {
     //joueur
     String nom;   //pseudo du joueur
-    ArrayList<Pion> tab=new ArrayList<>();   //les pions qu'il a en sa possession
+    ArrayList<Pion> tab=new ArrayList<>(4);   //les pions qu'il a en sa possession
     public Joueur(String e, ArrayList possession){
         this.nom=e;
         this.tab=possession;
@@ -26,6 +26,11 @@ public class Joueur {
         int numJMonstrueux= rand.nextInt(2+1);
         System.out.println("le joueur: "+numJMonstrueux+"commence");
         return numJMonstrueux;
+    }
+    
+        //retourne le nombre de pion restants
+    public int pionRestant(){
+        return tab.size();
     }
     
     
