@@ -20,5 +20,14 @@ public class Joueur {
         this.tab=possession;
     }
     
+       public int plusMonstrueux(){
+        Random rand = new Random();
+        int nbJoueurs=2;
+        int numJMonstrueux= rand.nextInt(2+1);
+        System.out.println("le joueur: "+numJMonstrueux+"commence");
+        return numJMonstrueux;
+    }
+    
+    
     
 }
